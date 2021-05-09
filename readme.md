@@ -1,6 +1,6 @@
 ## React Modal Cropper
-This is a react component that let you crop images with any size you want. First crop in a modal check how the image is going to be and then post to an endpoint that you want. After post you going to have 2 requests croppedImage and originalImage.
-It works with cropperId so you can use many times in a page.
+This is a react component that lets you crop images with any size you want. First crop in a modal check how the image is going to be and then post to an endpoint that you want. After post, you going to have 2 requests croppedImage and originalImage.
+It works with cropperId so you can use it many times on a page.
 
 ### How To Use
 Dependencies:  
@@ -24,7 +24,7 @@ Sample:
 ## Properties
 
 Pass these properties as props to Cropper component.
-These values are samples not default value.
+These values are samples, not the default value.
 
 | property | sample value | descriptions |
 | ------ | ------ | ------ |
