@@ -39,4 +39,4 @@ These values are samples, not the default value.
 | cancle | ``` cancle ``` |Text of cancle button in modal|
 | submit | ``` save ``` |Text of submit button in modal|
   
-Powered by Cropper js [https://fengyuanchen.github.io/cropperjs/]
+Powered by Cropper js https://fengyuanchen.github.io/cropperjs
