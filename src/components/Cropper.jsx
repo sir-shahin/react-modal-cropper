@@ -71,7 +71,7 @@ const Cropperjs = (props) =>{
                         <div className="p-1">{props.title}</div>
                         <img id={props.cropperId} src={imgBase64} width="300" />
                         <div className="p-1 mt-4 text-right">
-                            <span className={`cancle-btn cursor-pointer ${props.rounded}`} onClick={(event)=>{resetCropper(event)}}>{props.cancle || 'Cancle'}</span>
+                            <span className={`cancel-btn cursor-pointer ${props.rounded}`} onClick={(event)=>{resetCropper(event)}}>{props.cancel || 'cancel'}</span>
                             <span className={`save-btn cursor-pointer ${props.rounded}`} onClick={(event)=>{saveCroppedImage()}}>{props.submit || 'Save'}</span>
                         </div>
                     </div>
@@ -128,24 +128,31 @@ const Cropperjs = (props) =>{
                     padding: 4px 13px;
                     margin:5px;
                 }
-                .cancle-btn{
+                .cancel-btn{
                     background-color:#ddd;
                     color:black;
                     padding: 4px 13px;
                     margin:5px;
                 }
-                .save-btn:hover,.cancle-btn:hover{
+                .save-btn:hover,.cancel-btn:hover{
                     filter:contrast(150%)
                 }
                 .text-right {
                     text-align: right;
                 }
                 .shadow {
-                    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+                    --tw-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
                     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
                 }
                 .bg-gray{
                     background-color:#eeeeee;
+                }
+                ${
+                    props.circleMode == 'circle' &&
+                    `.cropper-view-box,
+                        .cropper-face {
+                        border-radius: 50%;
+                    }`
                 }
             `}</style>
         </div>
