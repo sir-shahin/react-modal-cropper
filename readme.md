@@ -36,7 +36,7 @@ These values are samples, not the default value.
 | circleMode | ```circle``` |Use circle for profile images|
 | rounded | ```round``` |Modal and buttons with border radius|
 | maxFileSize | ``` 5 ``` |Maximum megabyte image size that is acceptable|
-| cancle | ``` cancle ``` |Text of cancle button in modal|
+| cancel | ``` cancel ``` |Text of cancel button in modal|
 | submit | ``` save ``` |Text of submit button in modal|
   
 Powered by Cropper js https://fengyuanchen.github.io/cropperjs
